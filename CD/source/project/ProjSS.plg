@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ProjSS - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+ as -I C:\gba\arm-agb-elf\include -I C:\gba\lib\gcc-lib\arm-agb-elf\3.0.2\include -mthumb-interwork C:\PSS\Program\ProjSS\boot.s -oboot.o
+------------------------------------------
+ASM-Sources Compiled
+------------------------------------------
+ as -I C:\gba\arm-agb-elf\include -I C:\gba\lib\gcc-lib\arm-agb-elf\3.0.2\include -mthumb-interwork C:\PSS\Program\ProjSS\vblank.s -ovblank.o
+------------------------------------------
+ASM-Sources Compiled
+------------------------------------------
+ gcc  -I C:\gba\arm-agb-elf\include -I C:\gba\lib\gcc-lib\arm-agb-elf\3.0.2\include -I C:\PSS\Program\ProjSS -mthumb-interwork -c -g -O3 -Wall -fverbose-asm C:\PSS\Program\ProjSS\PSSInit.cpp C:\PSS\Program\ProjSS\PSSDisplay.cpp C:\PSS\Program\ProjSS\PSSInterface.cpp C:\PSS\Program\ProjSS\PSSSimulation.cpp C:\PSS\Program\ProjSS\main.cpp 
+C:/PSS/Program/ProjSS/main.cpp:27:1: warning: multi-line string literals are deprecated
+------------------------------------------
+CPP-Sources Compiled
+------------------------------------------
+ ld -L C:\gba\lib\gcc-lib\arm-agb-elf\3.0.2\interwork -L C:\gba\arm-agb-elf\lib\interwork -T LinkScript -o ProjSS.elf boot.o     vblank.o    crtbegin.o    crtend.o    PSSInit.o    PSSDisplay.o   PSSInterface.o   PSSSimulation.o        main.o -lstdc++ -lgcc -lc
+------------------------------------------
+Linking Done
+------------------------------------------
+ objcopy -v -O binary ProjSS.elf ProjSS.bin
+copy from ProjSS.elf(elf32-littlearm) to ProjSS.bin(binary)
+------------------------------------------
+Done
+------------------------------------------
+
+
+
+<h3>Results</h3>
+ProjSS.bin - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

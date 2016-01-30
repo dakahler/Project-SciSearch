@@ -1,0 +1,15 @@
+/**********************************************\
+*       eight.h                                   *
+*          by dovotos pcx->gba program         *
+**********************************************/
+#define  eight_WIDTH   8
+#define  eight_HEIGHT  8
+
+
+const u16 eightData[] = {
+                    0x1717, 0x1717, 0x1717, 0x1717, 0x1717, 0xFAFA, 0xFAFA, 0x1717, 0x1717, 0x17FA,
+                    0xFA17, 0x1717, 0x1717, 0xFAFA, 0xFAFA, 0x1717, 0x1717, 0x17FA, 0xFA17, 0x1717,
+                    0x1717, 0x17FA, 0xFA17, 0x1717, 0x1717, 0xFAFA, 0xFAFA, 0x1717, 0x1717, 0x1717,
+                    0x1717, 0x1717,};
+
+

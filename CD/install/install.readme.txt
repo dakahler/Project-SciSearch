@@ -1,0 +1,7 @@
+Install:
+
+The gba folder contains the GBA SDK, DevKitAdv.
+
+The emu folder contains a free copy of VisualBoyAdvance 1.6a.
+
+For the ProjSS source code, see /source.
